@@ -1,62 +1,57 @@
-# AI Gemini Chatbot
-# 🤖 AI Gemini Chatbot — Multimodal Assistant (Text + Vision + Embeddings)
+# 🧠 Gemini AI Assistant — Multi-Modal Chatbot with Voice Support
 
-## 📌 Project Overview
+A powerful **AI Assistant Web App** built using **Google Gemini API + Streamlit** that supports:
 
-AI Gemini Chatbot is an interactive web-based application built using **Streamlit** and **Google Gemini API** that supports:
+* 💬 Conversational Chatbot
+* 🎤 Voice Assistant (Speech-to-Text + Text-to-Speech)
+* 🖼️ Image Captioning
+* 🔡 Text Embeddings Generator
+* ❓ Ask-Anything AI Query
 
-* 💬 Text-based conversations
-* 🖼️ Image understanding (Vision AI)
-* 🔎 Embeddings-based responses
-* ⚡ Fast and user-friendly interface
-
-The project demonstrates how Generative AI models can be integrated into real-world applications using Python.
+This project demonstrates integration of **Generative AI, Multimodal AI, and Voice Interaction** in a single application.
 
 ---
 
 ## 🚀 Features
 
-✅ Chat with Gemini AI (Text Responses)
-✅ Image Upload & Vision Analysis
-✅ Embeddings-Based Processing
-✅ Streamlit Interactive UI
-✅ Multiple Model Support
-✅ Clean Modular Code Structure
+✅ Chat with Gemini AI (context-aware conversation)
+✅ Voice Assistant using microphone input
+✅ AI response speech output (browser speech synthesis)
+✅ Image caption generation using Gemini Vision
+✅ Text embedding generation
+✅ Replay / Stop voice controls
+✅ Modern Streamlit UI with sidebar navigation
 
 ---
 
-## 🧠 Technologies Used
+## 🏗️ Tech Stack
 
-| Category         | Tools                       |
-| ---------------- | --------------------------- |
-| Language         | Python                      |
-| Frontend         | Streamlit                   |
-| AI Model         | Google Gemini API           |
-| Image Processing | PIL (Pillow)                |
-| Configuration    | JSON                        |
-| Environment      | Virtual Environment (.venv) |
+| Technology            | Usage            |
+| --------------------- | ---------------- |
+| Python                | Core programming |
+| Streamlit             | Web interface    |
+| Google Gemini API     | Generative AI    |
+| SpeechRecognition     | Voice input      |
+| Web Speech API        | Voice output     |
+| Pillow                | Image processing |
+| Streamlit Option Menu | Navigation UI    |
 
 ---
 
 ## 📂 Project Structure
 
 ```
-AI_GEMINI_CHATBOT/
-│
-├── main.py                # Streamlit app entry point
-├── gemini_utility.py      # Gemini model utility functions
-├── check_models.py        # Model availability checker
-├── config.json            # Configuration settings
-├── requirements.txt       # Dependencies
-├── test_image.png         # Sample image
-│
-├── .venv/                 # Virtual environment (ignored)
-└── __pycache__/           # Cache (ignored)
+AI_Gemini_chatbot/
+│── main.py                 # Streamlit application
+│── gemini_utility.py       # Gemini API functions
+│── config.json             # API key configuration
+│── requirements.txt        # Dependencies
+│── README.md               # Project documentation
 ```
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation
 
 ### 1️⃣ Clone Repository
 
@@ -64,8 +59,6 @@ AI_GEMINI_CHATBOT/
 git clone https://github.com/yourusername/AI_Gemini_chatbot.git
 cd AI_Gemini_chatbot
 ```
-
----
 
 ### 2️⃣ Create Virtual Environment
 
@@ -75,19 +68,17 @@ python -m venv .venv
 
 Activate:
 
-**Windows**
+Windows:
 
 ```bash
 .venv\Scripts\activate
 ```
 
-**Linux / Mac**
+Mac/Linux:
 
 ```bash
 source .venv/bin/activate
 ```
-
----
 
 ### 3️⃣ Install Requirements
 
@@ -97,25 +88,34 @@ pip install -r requirements.txt
 
 ---
 
-### 4️⃣ Add Gemini API Key
+## 🔑 Setup API Key
 
-Create environment variable:
+Create a file named:
 
-```bash
-set GOOGLE_API_KEY=your_api_key
+```
+config.json
 ```
 
-or edit inside config if required.
+Add:
+
+```json
+{
+  "GOOGLE_API_KEY": "YOUR_API_KEY_HERE"
+}
+```
+
+Get API key from:
+https://makersuite.google.com/app/apikey
 
 ---
 
-### 5️⃣ Run Application
+## ▶️ Run Application
 
 ```bash
 streamlit run main.py
 ```
 
-App will open in browser:
+App will open at:
 
 ```
 http://localhost:8501
@@ -123,79 +123,42 @@ http://localhost:8501
 
 ---
 
-## 🖼️ Supported Capabilities
+## 🎤 Voice Features
 
-### Text Chat
+* Speak AI responses
+* Replay voice
+* Stop voice anytime
+* Optional auto-speak mode
 
-Ask questions and receive AI-generated responses.
-
-### Image Analysis
-
-Upload an image and get AI interpretation.
-
-### Embeddings
-
-Generate semantic representations for advanced tasks.
+Uses browser speech synthesis for smooth control.
 
 ---
 
-## 🔍 Example Use Cases
+## 📸 Screenshots
 
-* AI Personal Assistant
-* Image Understanding Tool
-* Educational Q&A System
-* Document Interpretation
-* Multimodal Chat Applications
+(Add screenshots here for better GitHub visibility)
 
----
+Example:
 
-## ⚠️ Challenges Faced
-
-* API compatibility issues with Gemini models
-* Streamlit UI state management
-* Handling multimodal inputs
-* Environment configuration errors
+```
+![Chatbot](screenshots/chat.png)
+![Voice](screenshots/voice.png)
+```
 
 ---
 
-## 🚧 Future Improvements
+## 🧠 Learning Outcomes
 
-* Chat history memory
-* Voice input support
-* Deployment on cloud (AWS / GCP / Azure)
-* Authentication system
-* Database integration
-* Docker containerization
-
----
-
-## 📈 Learning Outcomes
-
-Through this project I gained experience in:
+This project demonstrates:
 
 * Generative AI integration
-* API handling
+* Multimodal AI (Text + Image + Voice)
 * Streamlit UI development
-* Multimodal AI systems
-* Debugging and dependency management
+* API integration
+* Session management
+* Browser speech synthesis control
 
 ---
 
-## 👨‍💻 Author
-
-**K. Guru Vishnu**
-B.Tech — Computer Science (Artificial Intelligence)
-
-GitHub: https://github.com/guruvish
-LinkedIn:[Linkedin](https://www.linkedin.com/in/guru-vishnu-kavuturu-075127246/)
----
-
-## ⭐ If You Like This Project
-
-Please give a ⭐ on GitHub!
-
----
-
-## 📜 License
-
-This project is for educational and research purposes.
+## 🔮 Futu
+![sample images](image.png)
